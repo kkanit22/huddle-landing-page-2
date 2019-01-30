@@ -1,10 +1,12 @@
 html {
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: auto;
+  margin: 0 auto;
   max-width: 1440px;
 }
 
@@ -26,7 +28,7 @@ body {
   }
 }
 
-@media screen and (max-width: 560px) {
+/* @media screen and (max-width: 560px) {
   body {
     font-size: 10px;
   }
@@ -36,10 +38,28 @@ body {
   body {
     font-size: 8px;
   }
-}
+} */
 
 h1, h2, h3 {
   font-family: Poppins, serif;
+}
+
+/* h1 {
+   font-size: 2.7em;
+} */
+
+header {
+   background-color: #EBFBFF;
+   background-image: url(../images/bg-hero-desktop.svg);
+   /* height: 50vw; */
+   margin: 0;
+   max-height: 718px;
+   width: 100%;
+}
+@media screen and (max-width: 500px) {
+   header {
+      background-image: url(../images/bg-hero-mobile.svg);
+   }
 }
 
 .attribution {
@@ -59,7 +79,7 @@ h1, h2, h3 {
   flex-wrap: nowrap;
   margin: 5vw auto;
   padding: 3em 0;
-  width: 90%;
+  width: 95%;
 }
 
 @media screen and (max-width: 850px) {
@@ -101,4 +121,78 @@ h1, h2, h3 {
   .body-flex-container:nth-of-type(even)>.body-element {
     margin: 0 auto 0;
   }
+}
+
+.btn-1 {
+   background-color: #F5F5F5;
+   border-radius: 10vh;
+   box-shadow: 0 0 2vw 0 #CCC;
+   font-weight: 700;
+   margin-right: 5vw;
+   padding: 0.75em 3em;
+}
+
+.btn-2 {
+   background-color: #FF52BF;
+   border-radius: 10vh;
+   box-shadow: 0 0 2vw 0 #CCC;
+   color: #EBFBFF;
+   display: inline-block;
+   /* font-weight: 700; */
+   margin-right: 5vw;
+   padding: 0.75em 3em;
+}
+
+.intro-container {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+@media screen and (max-width: 850px) {
+   .intro-container {
+      flex-wrap: wrap;
+   }
+}
+
+.intro-box {
+   margin-left: 2em;
+   width: 36%;
+   min-width: 320px;
+}
+@media screen and (max-width: 850px) {
+   .intro-box {
+      margin-bottom: 5em;
+      text-align: center;
+      width: 80%;
+   }
+}
+
+.intro-illustration {
+   margin-right: 2em;
+   width: 50%;
+   min-width: 320px;
+}
+@media screen and (max-width: 850px) {
+   .intro-illustration {
+      width: 80%;
+      text-align: center;
+   }
+}
+
+.intro-illustration > img {
+   width: 100%;
+}
+
+.logo-img {
+  margin: auto 5vw;
+  width: 12em;
+  max-width: 30vw;
+}
+
+.topbar {
+   display: flex;
+   justify-content: space-between;
+   padding: 3em 0;
+   /* height: 10em; */
+   width: 100%;
 }
